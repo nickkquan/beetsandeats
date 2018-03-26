@@ -22,7 +22,6 @@ app.get('/yelpproxy', (req, res) => {
 		'radius': req.query.radius
 	};
 	client.search(searchRequest).then(response => {
-		console.log("Response ", response)
 		const firstResult = response.jsonBody.businesses;
 		const prettyJson = JSON.stringify(firstResult, null, 4);
 		res.send(prettyJson);
