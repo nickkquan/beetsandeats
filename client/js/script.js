@@ -290,15 +290,15 @@ function getYelpData(latLng, type, color) {
 	let arrayOfPlaces = [];
 	let ajaxConfig = {
 		dataType: "json",
-		url: "http://danielpaschal.com/yelpproxy.php",
+		url: "/yelpproxy",
 		method: "GET",
 		data: {
 			latitude: latLng.lat,
 			longitude: latLng.lng,
 			term: type,
 			radius: 40000,
-			api_key:
-				"VFceJml03WRISuHBxTrIgwqvexzRGDKstoC48q7UrkABGVECg3W0k_EILnHPuHOpSoxrsX07TkDH3Sl9HtkHQH8AwZEmj6qatqtCYS0OS9Ul_A02RStw_TY7TpteWnYx"
+			// api_key:
+			// 	"VFceJml03WRISuHBxTrIgwqvexzRGDKstoC48q7UrkABGVECg3W0k_EILnHPuHOpSoxrsX07TkDH3Sl9HtkHQH8AwZEmj6qatqtCYS0OS9Ul_A02RStw_TY7TpteWnYx"
 		},
 		success: function(response) {
 			for (let businessIndex = 0; businessIndex < response.businesses.length; businessIndex++) {
