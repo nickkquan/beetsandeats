@@ -1,0 +1,25 @@
+{
+  "name": "beets_and_eats",
+  "version": "1.0.0",
+  "description": "An event planning application to help you plan the drinks and eats near an event of your choice!",
+  "main": "app.js",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "yelp-fusion": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickkquan/beetsandeats.git"
+  },
+  "author": "Nick Quan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickkquan/beetsandeats/issues"
+  },
+  "homepage": "https://github.com/nickkquan/beetsandeats#readme"
+}
