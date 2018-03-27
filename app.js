@@ -64,6 +64,9 @@ app.get("/yelpproxy", (req, res) => {
 		})
 		.catch(e => {
 			console.log(e);
+			res.json({
+				message: "There was an error while finding data from Yelp."
+			});
 		});
 });
 
