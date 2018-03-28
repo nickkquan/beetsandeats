@@ -17,6 +17,7 @@ function termTest(req) {
 	if (pattern.test(req.query.term)) {
 		var term = req.query.term;
 	}
+	return term;
 }
 
 function latitudeTest(req) {
@@ -28,7 +29,7 @@ function latitudeTest(req) {
 }
 
 function longitudeTest(req) {
-	let pattern = /^-?([1-8]?[1-9]|[1-9]0)\.{1}\d{1,10}/;
+	let pattern = /^-?([1]?[1-7][1-9]|[1]?[1-8][0]|[1-9]?[0-9])\.{1}\d{1,10}/;
 	if (pattern.test(req.query.longitude)) {
 		var longitude = req.query.longitude;
 	}
